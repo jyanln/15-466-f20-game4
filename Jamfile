@@ -34,6 +34,7 @@ if $(OS) = NT { #Windows
 	;
 
 	File SDL2.dll : $(NEST_LIBS)\\SDL2\\dist\\SDL2.dll ;
+  Font
 	File README-SDL.txt : $(NEST_LIBS)\\SDL2\\dist\\README-SDL.txt ;
 	MakeLocate SDL2.dll : dist ;
 	MakeLocate README-SDL.txt : dist ;
@@ -104,6 +105,8 @@ GAME_NAMES =
 	PlayMode
 	main
 	LitColorTextureProgram
+  Text
+  TextProgram
 	#ColorTextureProgram #not used right now, but you might want it
 	Sound
 	load_wav
